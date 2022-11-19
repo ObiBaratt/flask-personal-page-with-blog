@@ -1,0 +1,119 @@
+{% include "header.html" %}
+{% block content %}
+    <header class="masthead"
+            style="background-image: url({{ url_for('static', filename='img/header-sunset.JPG') }})">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="site-heading">
+                        <h1>Main Page Title</h1>
+                        <span class="subheading"><em>Motto Goes Here</em></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class=flashes>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+    <body>
+
+    <!-- Confetti effect using only CSS. -->
+    <div id="confettis">
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+    </div>
+
+    <div class="container" style="text-align: center">
+        <h1 style="color:white"><em>CONGRATULATIONS!</em></h1>
+        <h4 style="color:white"><em>Reason</em></h4>
+        <p></p>
+    </div>
+    <div class="container" style="text-align: center">
+        <img src="static/img/main.jpg" width="900" height="900" class="img-fluid">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-1">
+                <p></p>
+            </div>
+            <div class="col-lg-10">
+                <p>Interesting text goes here.</p>
+            </div>
+            <div class="col-lg-1">
+                <p></p>
+            </div>
+    </div></div>
+
+    <!-- 3x3 image grid -->
+    <div class="container" style="text-align: center">
+        <div class="row">
+            <div class="col-sm">
+                <img src="static/img/img1.jpg" width="300" height="300" alt="1">
+                <p></p>
+            </div>
+            <div class="col-sm">
+                <img src="static/img/img2.jpg" width="300" height="300" alt="2">
+                <p></p>
+            </div>
+            <div class="col-sm">
+                <img src="static/img/img3.jpg" width="300" height="300" alt="3">
+                <p></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <img src="static/img/img4.jpg" width="300" height=300" alt="4">
+                <p></p>
+            </div>
+            <div class="col-sm">
+                <img src="static/img/img5.jpg" width="300" height="300" alt="5">
+                <p></p>
+            </div>
+            <div class="col-sm">
+                <img src="static/img/img6.jpg" width="300" height="300" alt="6">
+                <p></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <img src="static/img/img7.jpg" width="300" height="300" alt="7">
+                <p></p>
+            </div>
+            <div class="col-sm">
+                <img src="static/img/img8.JPG" width="300" height="300" alt="8">
+                <p></p>
+            </div>
+            <div class="col-sm">
+                <img src="static/img/img9.jpeg" width="300" height="300" alt="9">
+                <p></p>
+            </div>
+        </div>
+    </div>
+    </body>
+
+    {% include "footer.html" %}
+{% endblock %}

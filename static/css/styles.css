@@ -1,0 +1,21 @@
+body {
+    /*background-color: #FF4646;*/
+    /*background-color: #FFF5C0;*/
+    background-color: #FFB396;
+}
+
+img {
+    border-style: solid;
+    border-width: 5px;
+    border-color: #FF4646;
+    border-radius: 20px;
+    /*padding: 2px;*/
+    /*background-color: #FF8585;*/
+}
+
+.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
