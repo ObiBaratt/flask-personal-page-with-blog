@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <!-- Example of a for loop for items -->
+    <ol>
+        {% for i in range(1, 21) %}
+            <li>{{ i ** 2 }}</li>
+        {% endfor %}
+    </ol>
+{% endblock %}

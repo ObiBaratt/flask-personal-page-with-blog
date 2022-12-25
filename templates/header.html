@@ -1,0 +1,33 @@
+<!-- Meta tags / HTML doc setup -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>UNTITLED PAGE</title>
+
+  <!-- Import CSS/Fonts/Styles HERE (i.e. Bootstrap if you want it) -->
+  <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+
+
+</head>
+
+<!-- Build out a Navbar -->
+
+<!-- Helpful if blocks if you want the Navbar to be different for logged in users.
+     You can use these inside your Navbar HTML at the same time! -->
+
+<!-- Put things everyone should see here -->
+
+{% if not current_user.is_authenticated %}
+<!-- Things anonymous users should see -->
+{% endif %}
+
+{% if current_user.is_authenticated %}
+<!-- Things authenticated users see -->
+{% endif %}

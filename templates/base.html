@@ -1,10 +1,15 @@
-{% extends 'bootstrap/base.html' %}
+<!-- Extending bootstrap base is optional! Just uncomment it if you want it!
+     Its included here to demo extending templates. 
+     You should extend this base.html the same way. -->
+<!-- {% extends 'bootstrap/base.html' %} -->
 {% include "header.html" %}
 
-{% block content %}
-
-<!-- This is where your content will go if you extend base.html -->
-
-{% endblock %}
+<section id="main-content">
+    {% block content %}
+    
+    <!-- This is where your content will go if you extend base.html -->
+    
+    {% endblock %}
+</section>
 
 {% include "footer.html" %}
