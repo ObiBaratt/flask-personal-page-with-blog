@@ -1,0 +1,8 @@
+/* 
+
+Add your custom global styles here. If you want page specific styles, 
+make a new stylesheet and import it to your specific page like:
+
+<link href="{{ url_for('static', filename='css/YOUR_NEW_FILENAME.css') }}" rel="stylesheet">
+
+*/
